@@ -1,9 +1,9 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 /**
- * Time Span - Administrative Controller
+ * KML on by Default - Administrative Controller
  *
  * @author	   John Etherton
- * @package	   Time Span
+ * @package	   KML on by Default
  */
 
 class Kmlonbydefault_settings_Controller extends Admin_Controller

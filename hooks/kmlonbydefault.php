@@ -1,9 +1,9 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 /**
- * Time Span - sets up the hooks
+ *  KML on by Default - sets up the hooks
  *
  * @author	   John Etherton
- * @package	   Time Span
+ * @package	   KML on by Default
  */
 
 class kmlonbydefault {
@@ -18,10 +18,7 @@ class kmlonbydefault {
 		// Hook into routing
 		Event::add('system.pre_controller', array($this, 'add'));
 		
-		$this->settings = ORM::factory('timespan')
-				->where('id', 1)
-				->find();
-				
+			
 		// Set Table Prefix
 		$this->table_prefix = Kohana::config('database.default.table_prefix');		
 

@@ -1,9 +1,9 @@
 <?php
 /**
- * Time Span - Install
+ * KML on by default - Install
  *
  * @author	   John Etherton
- * @package	   Time Span
+ * @package	   KML on By Default
  */
 
 class kmlonbydefault_Install {

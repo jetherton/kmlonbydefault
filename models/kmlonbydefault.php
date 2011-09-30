@@ -1,9 +1,9 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 /**
- * Time Span - Database Model
+ * KML on by Default - Database Model
  *
  * @author	   John Etherton
- * @package	   Time Span
+ * @package	   KML on by Default
  */
 
 class kmlonbydefault_Model extends ORM
