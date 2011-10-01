@@ -3,7 +3,8 @@ name: KML on by Default
 website: http://apps.ushahidi.com
 description: Lets you set any KML layers to be displayed by default on the homepage ushahidi map.
 version: 1.0
-requires: 2.0b10
+requires: 2.1
+tested up to: 2.1
 author: John Etherton
 author website: http://johnetherton.com
 
