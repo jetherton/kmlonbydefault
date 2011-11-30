@@ -1,6 +1,6 @@
 === About ===
 name: KML on by Default
-website: http://apps.ushahidi.com
+website: https://github.com/jetherton/kmlonbydefault
 description: Lets you set any KML layers to be displayed by default on the homepage ushahidi map.
 version: 1.0
 requires: 2.1
