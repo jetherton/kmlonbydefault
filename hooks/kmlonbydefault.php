@@ -56,7 +56,9 @@ class kmlonbydefault {
 				$map .= "'".$layer->layer_color."'); }\r\n";	
 				//for 2.5 compatibility
 				$map .= "else if (typeof map.addLayer == 'function') {";
-				$map .= 'map.addLayer(Ushahidi.KML, {name: "'.$layer->layer_name.'", url: "json/layer/'.$layer->id.'"});}';
+				$map .= 'map.addLayer(Ushahidi.KML, {name: "'.$layer->layer_name.'", url: "json/layer/'.$layer->id.'"});';
+				//add the active class
+				$map .='$("ul#kml_switch a#layer_'.$layer->id.'").addClass("active");}';
 				$map .= "\r\n";
 			}
 		}
