@@ -50,9 +50,14 @@ class kmlonbydefault {
 		{
 			if($layer->kmlonbydefault_id != null)
 			{
-				$map .= "switchLayer('".$layer->id."',";
+				//for 2.4 backward compatibility. At some point this should be deprecated and removed
+				$map .= "if(typeof switchLayer == 'function'){switchLayer('".$layer->id."',"; 
 				$map .= "'".url::base().Kohana::config('upload.relative_directory')."/".$layer->layer_file."',";
-				$map .= "'".$layer->layer_color."'); ";	
+				$map .= "'".$layer->layer_color."'); }\r\n";	
+				//for 2.5 compatibility
+				$map .= "else if (typeof map.addLayer == 'function') {";
+				$map .= 'map.addLayer(Ushahidi.KML, {name: "'.$layer->layer_name.'", url: "json/layer/'.$layer->id.'"});}';
+				$map .= "\r\n";
 			}
 		}
 		$map .= '});</script>';
